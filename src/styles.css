@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff6f61, #de1b3c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #444;
+    font-weight: bold;
+}
+
+.form-group .required {
+    color: #e74c3c;
+}
+
+.form-group .optional {
+    color: #95a5a6;
+    font-weight: normal;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-group .radio-group {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.success-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.error-message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+.error {
+    border-color: #e74c3c;
+}
+
+.error-message {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Espaço adicional abaixo da mensagem de erro */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}

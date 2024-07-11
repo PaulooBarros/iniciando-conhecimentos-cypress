@@ -1,0 +1,26 @@
+name: Cypress Tests
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.15.1'  # Especifique a versão do Node.js que você está usando no seu projeto
+
+      - name: Install Cypress
+        run: |
+          npm install cypress@9.5.1
+          $(npm bin)/cypress install  # Instala as dependências do Cypress
+
+      - name: Run Cypress tests
+        run: |
+          $(npm bin)/cypress run
+
