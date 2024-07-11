@@ -10,17 +10,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20.15.1'  # Especifique a versão do Node.js que você está usando no seu projeto
+          node-version: '20.15.1'
 
       - name: Install Cypress
         run: |
           npm install cypress@9.5.1
-          $(npm bin)/cypress install  # Instala as dependências do Cypress
 
       - name: Run Cypress tests
         run: |
-          $(npm bin)/cypress run
-
+          npx cypress run
