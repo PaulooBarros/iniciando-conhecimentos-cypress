@@ -44,4 +44,4 @@ Este projeto está configurado com uma workflow no GitHub Actions para executar 
 Se deseja contribuir com melhorias ou correções, fique à vontade para abrir uma issue ou enviar um pull request.
 ```
 
-Este README agora foca nos pré-requisitos, instalação, execução dos testes, configuração da workflow do GitHub Actions e como contribuir para o projeto. Personalize-o conforme necessário para se adequar às especificidades do seu projeto Cypress.
+
